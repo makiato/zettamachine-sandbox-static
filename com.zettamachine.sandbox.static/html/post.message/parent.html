@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script type="text/javascript">
+		window.addEventListener('message', messageFromChild, false);
+		
+		function messageFromChild(event) {
+			console.log('parent -> ' + event.origin);
+			message.innerHTML += '<div>' + event.data + '</div>';
+		}
+		
+		function messageChild() {
+			try {
+				childframe.postMessage('Hello child', '*');
+			} catch(e) {
+				console.log('parent error -> ' + e.message);
+				message.innerHTML += '<div>' + e.message + '</div>';
+			}
+		}
+	</script>
+</head>
+<body>
+
+<div>There's an iframe below.</div>
+<div><button onclick="messageChild();">Send Message</button></div>
+
+<iframe src="child.html" id="childframe" name="childframe">
+</iframe>
+
+<div id="message"></div>
+</body>
+</html>
