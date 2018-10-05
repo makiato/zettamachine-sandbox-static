@@ -10,7 +10,7 @@
 		
 		function messageChild() {
 			try {
-				childframe.postMessage('Hello child', '*');
+				childframe.postMessage('Hello child - life sux', 'http://localhost:8080');
 			} catch(e) {
 				console.log('parent error -> ' + e.message);
 				message.innerHTML += '<div>' + e.message + '</div>';

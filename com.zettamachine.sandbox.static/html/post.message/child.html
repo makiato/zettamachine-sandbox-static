@@ -6,7 +6,7 @@
 		function messageFromParent(event) {
 			console.log('child -> ' + event.origin);
 			message.innerHTML += '<div>' + event.data + '</div>';
-			event.source.postMessage('Thanks parent', '*');
+			event.source.postMessage('Thanks parent', 'http://localhost:8080');
 		}
 	</script>
 </head>
