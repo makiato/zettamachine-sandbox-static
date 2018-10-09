@@ -1,0 +1,19 @@
+{
+	"meta": {
+		"requestId":"122323123iugduiws832"
+	},
+	"data": {
+		"articles":[
+			{
+				"id": 1,
+				"title": "",
+				"body": ""
+			},
+			{
+				"id": 2,
+				"title": "",
+				"body": ""
+			}
+		]
+	}
+}
