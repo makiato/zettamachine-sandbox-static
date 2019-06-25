@@ -1,0 +1,1447 @@
+{
+   "config-repayment-products":{
+      "VERSION":2,
+      "products":[
+         {
+            "id":"wiwoSV",
+            "name":"Your Standard Variable",
+            "features":{
+               "repaymentType":"PI_IO",
+               "termType":"rangeTerm"
+            },
+            "fee":{
+               "initial":500,
+               "discharge":350,
+               "monthly":0,
+               "annual":0
+            },
+            "limits":[
+               {
+                  "loanRange":{
+                     "min":-1,
+                     "max":-1
+                  },
+                  "term":{
+                     "min":-1,
+                     "max":-1
+                  },
+                  "lvr":{
+                     "min":-1,
+                     "max":-1,
+                     "defaultValue":-1
+                  },
+                  "lvrSoft":{
+                     "min":0,
+                     "max":1
+                  },
+                  "propertyPrice":{
+                     "min":-1,
+                     "max":-1
+                  }
+               }
+            ],
+            "rateDefaults":[
+               {
+                  "loanRange":{
+                     "min":-1,
+                     "max":-1
+                  },
+                  "term":{
+                     "min":-1,
+                     "max":-1
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":-1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":0.0612,
+                  "rateDiscount":0,
+                  "comparisonRate":"0% p.a."
+               }
+            ],
+            "rates":[
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":999999999
+                  },
+                  "term":{
+                     "min":1,
+                     "max":40
+                  },
+                  "lvr":{
+                     "min":-1,
+                     "max":-1
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":0.0419,
+                  "rateDiscount":0,
+                  "comparisonRate":"4.99% p.a."
+               }
+            ]
+         },
+         {
+            "id":"wiwoSVPremium",
+            "name":"Your SV Package",
+            "features":{
+               "repaymentType":"PI_IO",
+               "termType":"rangeTerm"
+            },
+            "fee":{
+               "initial":500,
+               "discharge":350,
+               "monthly":0,
+               "annual":295
+            },
+            "rates":[
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":250000
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.002,
+                  "comparisonRate":"5.02% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":250001,
+                     "max":500000
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.004,
+                  "comparisonRate":"5.03% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":500001,
+                     "max":99999999
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.006,
+                  "comparisonRate":"5.00% p.a."
+               }
+            ]
+         },
+         {
+            "id":"wiwoFixed1Y",
+            "name":"WiWo Fixed - 1 Year",
+            "features":{
+               "repaymentType":"PI_IO",
+               "termType":"rangeTerm"
+            },
+            "fee":{
+               "initial":600,
+               "discharge":350,
+               "monthly":20,
+               "annual":0
+            },
+            "rates":[
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":999999999
+                  },
+                  "term":{
+                     "min":1,
+                     "max":1
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":0,
+                     "offset":1
+                  },
+                  "interestType":"fixed",
+                  "repaymentType":"PI",
+                  "rate":0.0512,
+                  "rateDiscount":0,
+                  "comparisonRate":"5.55% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":999999999
+                  },
+                  "term":{
+                     "min":2,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":0,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":0.0635,
+                  "rateDiscount":0,
+                  "comparisonRate":"5.56% p.a."
+               }
+            ]
+         },
+         {
+            "id":"wiwoFixed3Y",
+            "name":"WiWo Fixed - 3 Years",
+            "features":{
+               "repaymentType":"PI_IO",
+               "termType":"rangeTerm"
+            },
+            "fee":{
+               "initial":600,
+               "discharge":350,
+               "monthly":20,
+               "annual":0
+            },
+            "rates":[
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":999999999
+                  },
+                  "term":{
+                     "min":1,
+                     "max":3
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":0,
+                     "offset":1
+                  },
+                  "interestType":"fixed",
+                  "repaymentType":"PI",
+                  "rate":0.0534,
+                  "rateDiscount":0,
+                  "comparisonRate":"5.45% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":999999999
+                  },
+                  "term":{
+                     "min":4,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":0,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":0.0635,
+                  "rateDiscount":0,
+                  "comparisonRate":"6.46% p.a."
+               }
+            ]
+         },
+         {
+            "id":"wiwoFixed5Y",
+            "name":"WiWo Fixed - 5 Years",
+            "features":{
+               "repaymentType":"PI_IO",
+               "termType":"rangeTerm"
+            },
+            "fee":{
+               "initial":600,
+               "discharge":350,
+               "monthly":20,
+               "annual":0
+            },
+            "rates":[
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":150000
+                  },
+                  "term":{
+                     "min":1,
+                     "max":5
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":833.33,
+                     "offset":0.4
+                  },
+                  "interestType":"fixed",
+                  "repaymentType":"PI",
+                  "rate":0.0567,
+                  "rateDiscount":0,
+                  "comparisonRate":"5.89% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":150000
+                  },
+                  "term":{
+                     "min":6,
+                     "max":40
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":0.0635,
+                  "rateDiscount":0,
+                  "comparisonRate":"6.55% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":150001,
+                     "max":999999999
+                  },
+                  "term":{
+                     "min":1,
+                     "max":5
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":833.33,
+                     "offset":0.4
+                  },
+                  "interestType":"fixed",
+                  "repaymentType":"PI",
+                  "rate":0.0765,
+                  "rateDiscount":0,
+                  "comparisonRate":"7.77% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":150001,
+                     "max":999999999
+                  },
+                  "term":{
+                     "min":6,
+                     "max":40
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.0012,
+                  "comparisonRate":"7.77% p.a."
+               }
+            ]
+         },
+         {
+            "id":"wiwoHoneymoon2Y",
+            "name":"WiWo Honeymoon - 2 Years",
+            "features":{
+               "repaymentType":"PI_IO",
+               "termType":"rangeTerm"
+            },
+            "fee":{
+               "initial":0,
+               "discharge":350,
+               "monthly":0,
+               "annual":0
+            },
+            "rates":[
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":500000
+                  },
+                  "term":{
+                     "min":1,
+                     "max":2
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.0075,
+                  "comparisonRate":"5.67% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":500000
+                  },
+                  "term":{
+                     "min":3,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":1
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0,
+                  "comparisonRate":"5.78% p.a."
+               }
+            ]
+         },
+         {
+            "id":"wiwoLvr",
+            "name":"Package - LVR and Loan Amount Ranges",
+            "features":{
+               "repaymentType":"PI_IO",
+               "termType":"rangeTerm"
+            },
+            "fee":{
+               "initial":600,
+               "discharge":350,
+               "monthly":0,
+               "annual":295
+            },
+            "rateDefaults":[
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":150000
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":0.6
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":-1,
+                  "comparisonRate":"0% p.a."
+               }
+            ],
+            "rates":[
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":100000
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":0.8
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":-1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.0095,
+                  "comparisonRate":"5.78% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":0,
+                     "max":100000
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0.8,
+                     "max":0.95
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":-1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.0085,
+                  "comparisonRate":"5.78% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":100001,
+                     "max":250000
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":0.8
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":-1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.0075,
+                  "comparisonRate":"5.78% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":100001,
+                     "max":250000
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0.8,
+                     "max":0.95
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":-1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.0065,
+                  "comparisonRate":"5.78% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":250001,
+                     "max":99999999
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0,
+                     "max":0.8
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":-1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.0085,
+                  "comparisonRate":"5.78% p.a."
+               },
+               {
+                  "loanRange":{
+                     "min":250001,
+                     "max":999999999
+                  },
+                  "term":{
+                     "min":1,
+                     "max":30
+                  },
+                  "lvr":{
+                     "min":0.8,
+                     "max":0.95
+                  },
+                  "features":{
+                     "extraRepayment":-1,
+                     "offset":-1
+                  },
+                  "interestType":"variable",
+                  "repaymentType":"PI",
+                  "rate":-1,
+                  "productId":"wiwoSV",
+                  "rateDiscount":0.0075,
+                  "comparisonRate":"5.78% p.a."
+               }
+            ]
+         }
+      ],
+      "repaymentType":[
+         {
+            "id":"PI",
+            "label":"Principal & Interest",
+            "interestOnly":false
+         },
+         {
+            "id":"IO_ARR",
+            "label":"Interest Only",
+            "interestOnly":true
+         }
+      ]
+   },
+   "customer-collector":{
+      "defaults":{
+         "contactNumberType":"mobile"
+      },
+      "parameters":{
+         "contactNumberTypes":[
+            {
+               "id":"mobile",
+               "label":"Mobile"
+            },
+            {
+               "id":"home",
+               "label":"Office"
+            }
+         ],
+         "contactTimeOptions":[
+            {
+               "id":"morning",
+               "label":"Morning between 9 and 11"
+            },
+            {
+               "id":"noon",
+               "label":"11:30am to early afternoon"
+            },
+            {
+               "id":"afternoon",
+               "label":"Afternoon up until 5pm"
+            },
+            {
+               "id":"evening",
+               "label":"After 5 up to 9pm"
+            },
+            {
+               "id":"emailOnly",
+               "label":"Only by email"
+            },
+            {
+               "id":"anytime",
+               "label":"Anytime of day by phone is fine"
+            }
+         ],
+         "integrations":[
+            {
+               "collectorType":"crm",
+               "requestForm":"crm",
+               "isDefault":true,
+               "viewData":[
+                  {
+                     "text":{
+                        "title":"Contact us now",
+                        "leader":"Let's talk about the calculator options and features.",
+                        "sendSuccess":{
+                           "title":"Message has been sent",
+                           "message":"<p>Thanks! We'll be in contact.</p>"
+                        },
+                        "sendError":{
+                           "title":"Message couldn't be sent",
+                           "message":"<p>Oops.. something has gone wrong.</p><p>We don't store your data so keep a copy and try send it later or contact us now.</p>"
+                        }
+                     },
+                     "formValidation":{
+                        "required":[
+                           "firstName",
+                           "lastName",
+                           "email",
+                           "contactNumber",
+                           "contactNumberType",
+                           "message"
+                        ]
+                     }
+                  }
+               ]
+            },
+            {
+               "collectorType":"email",
+               "requestForm":"email",
+               "viewData":[
+                  {
+                     "text":{
+                        "title":"Email",
+                        "leader":"Send a copy of your data to yourself or a friend.",
+                        "sendSuccess":{
+                           "title":"Email has been sent",
+                           "message":"Thanks! We've sent a link with all of your data to your nominated email address."
+                        },
+                        "sendError":{
+                           "title":"Email couldn't be sent",
+                           "message":"Oops.. something has gone wrong. Please try again later."
+                        }
+                     },
+                     "formValidation":{
+                        "required":[
+                           "firstName",
+                           "email"
+                        ],
+                        "optional":[
+                           "lastName",
+                           "message"
+                        ],
+                        "hidden":[
+                           "contactNumber",
+                           "contactNumberType"
+                        ]
+                     }
+                  }
+               ],
+               "isDefault":false
+            },
+            {
+               "collectorType":"emailUser",
+               "requestForm":"email",
+               "extendsType":"email",
+               "isDefault":false
+            }
+         ]
+      },
+      "text":{
+         "controls":{
+            "firstName":"First name",
+            "lastName":"Last name",
+            "email":"Email",
+            "contactNumber":"Contact number",
+            "contactNumberType":"Contact type",
+            "message":"Message",
+            "contactTime":"When is the best time for us to contact you",
+            "sendInProgress":"Sending your request...",
+            "submit":"Submit",
+            "cancel":"Cancel",
+            "finish":"OK"
+         },
+         "validation":{
+            "firstName":"Required",
+            "lastName":"Required",
+            "email":"Required",
+            "contactNumber":"Required",
+            "contactNumberType":"Required",
+            "contactTime":"Required"
+         }
+      },
+      "integration":{
+         "logOnly":false
+      }
+   },
+   "wiwo-repayment-widget":{
+      "defaults":{
+         "repaymentModel":{
+            "propertyValue":500000,
+            "principal":300000,
+            "term":30,
+            "interestRate":0.0599,
+            "repaymentType":"PI",
+            "repaymentFrequency":"month",
+            "product":"wiwoSV",
+            "productGroup":"all",
+            "_interestOnlyMode":"FULL_TERM",
+            "_skipProductFiltering":false
+         },
+         "savingsModel":{
+            "extraRepayment":0,
+            "offset":0,
+            "lumpSum":0,
+            "lumpSumYear":0,
+            "savingsEnabled":false
+         },
+         "rpyControlViewModel":{
+            "controlsExpandedMode":"full",
+            "repaymentFrequencyType":"radio",
+            "termInputMode":"years",
+            "enableModeSwitch":false,
+            "teaserStart":false,
+            "showPropertyValueInTeaser":false,
+            "showSingleProductGroup":false,
+            "showSingleProduct":false,
+            "showHouseTitle":false
+         }
+      },
+      "parameters":{
+         "repaymentConfig":{
+            "repaymentStyle":"actualFrequency",
+            "allowedFrequencies":[
+               "month",
+               "fortnight",
+               "week"
+            ],
+            "principalLookup":"initial"
+         },
+         "repaymentFrequency":[
+            {
+               "id":"annual",
+               "label":"Annually",
+               "single":"Year",
+               "plural":"Years",
+               "periodsPerYear":1,
+               "periodsPerMonth":0.08333
+            },
+            {
+               "id":"month",
+               "label":"Monthly",
+               "single":"Month",
+               "plural":"Months",
+               "periodsPerYear":12,
+               "periodsPerMonth":1
+            },
+            {
+               "id":"fortnight",
+               "label":"Fortnightly",
+               "single":"Fortnight",
+               "plural":"Fortnights",
+               "periodsPerYear":26,
+               "periodsPerMonth":2
+            },
+            {
+               "id":"week",
+               "label":"Weekly",
+               "single":"Week",
+               "plural":"Weeks",
+               "periodsPerYear":52,
+               "periodsPerMonth":4
+            }
+         ],
+         "infographic":{
+            "autoscrollTerm":true
+         },
+         "constraint":{
+            "repaymentConstraint":{
+               "propertyValue":{
+                  "constraints":[
+                     {
+                        "id":"min",
+                        "value":50000,
+                        "step":5000
+                     },
+                     {
+                        "id":"75%",
+                        "value":1000000,
+                        "step":10000
+                     },
+                     {
+                        "id":"max",
+                        "value":3000000,
+                        "step":1
+                     }
+                  ],
+                  "min":1000,
+                  "max":1000000,
+                  "step":5000
+               },
+               "principal":{
+                  "constraints":[
+                     {
+                        "id":"min",
+                        "value":0,
+                        "step":5000
+                     },
+                     {
+                        "id":"75%",
+                        "value":600000,
+                        "step":10000
+                     },
+                     {
+                        "id":"max",
+                        "value":2000000,
+                        "step":1
+                     }
+                  ],
+                  "min":1000,
+                  "max":1000000,
+                  "step":5000
+               },
+               "periodIo":{
+                  "strictStep":1
+               },
+               "term":{
+                  "min":1,
+                  "max":30,
+                  "step":1,
+                  "strictStep":1
+               },
+               "interestRate":{
+                  "min":0.0025,
+                  "max":0.15,
+                  "step":0.0025
+               },
+               "hideInterestRateSlider":false,
+               "showComparisonRateInline":false
+            },
+            "savingsConstraint":{
+               "extraRepayment":{
+                  "min":0,
+                  "max":10000,
+                  "step":100
+               },
+               "offset":{
+                  "min":0,
+                  "max":1000000,
+                  "step":1000
+               },
+               "lumpSum":{
+                  "min":0,
+                  "max":1000000,
+                  "step":1000
+               },
+               "lumpSumYear":{
+                  "min":0,
+                  "max":30,
+                  "step":1
+               },
+               "hideDisabledControls":false
+            },
+            "feeConstraint":{
+               "initial":{
+                  "min":0,
+                  "max":1000,
+                  "step":10
+               },
+               "discharge":{
+                  "min":0,
+                  "max":1000,
+                  "step":10
+               },
+               "regular":{
+                  "min":0,
+                  "max":1000,
+                  "step":10
+               },
+               "regularFrequencies":[
+                  "month",
+                  "annual"
+               ]
+            },
+            "lvr":{
+               "propertyValueEnabled":true,
+               "lvrConfig":{
+                  "min":0,
+                  "defaultValue":0.75,
+                  "max":0.95,
+                  "roundingUnits":3
+               }
+            },
+            "fee":{
+               "feeEnabled":true,
+               "annualFeeInitialPeriod":1,
+               "labels":{
+                  "annual":"year",
+                  "month":"month"
+               }
+            },
+            "personalisedComparisonRate":{
+               "showPcr":true
+            },
+            "options":{
+               "percentage":{
+                  "precision":2
+               },
+               "disableInterestOnly":false,
+               "showComparisonRate":false
+            }
+         }
+      },
+      "text":{
+         "assumptions":{
+            "title":"Assumptions",
+            "content":"<h3>Calculator information</h3>  <p>The Loan Repayment Calculator calculates the type of repayment required, at the frequency requested, in respect of the loan parameters entered, namely amount, term and interest rate. The Product selected determines the default interest rate for standard variable products or the default interest rate and fixed period for fixed rate loans. In both scenarios, the customer can manually amend this interest rate. In the case of the fixed rate loans, the default standard variable interest rate will be used once the fixed period has completed.</p>  <p>The Loan Repayment Calculator also calculates the time saved to pay off the loan and the amount of interest saved based on a number of additional inputs from the customer. Included are, if repayments are increased by the entered amount of extra contribution per repayment period, if a single additional lump sum repayment is made, equal to the entered amount of additional lump sum repayment after the loan has been in force for the entered number of years, in addition to continuing the regular repayment and/or 100% of the offset account balance entered is used to reduce the outstanding loan balance per period when calculating interest. </p> <p>These calculations are done at the repayment frequency entered, in respect of the original loan parameters entered, namely amount, annual interest rate and term in years.</p>  <br> <h3>Calculator assumptions</h3> <h4>Length of month</h4>  <p>All months are assumed to be of equal length. In reality, many loans accrue on a daily basis leading to a varying number of days' interest dependent on the number of days in the particular month.</p>   <h4>Number of weeks or fortnights in a year</h4>  <p>One year is assumed to contain exactly 52 weeks or 26 fortnights. This implicitly assumes that a year has 364 days rather than the actual 365 or 366.</p>   <h4>Rounding of amount of each repayment</h4>  <p>In practice, repayments are rounded to at least the nearer cent. However the calculator uses the unrounded repayment to derive the amount of interest payable at points along the graph and in total over the full term of the loan. This assumption allows for a smooth graph and equal repayment amounts. Note that the final repayment after the increase in repayment amount, after the additional lump sum repayment amount or the effect of the offset account balance will be a partial repayment as required to reduce the loan balance to zero.</p>   <h4>Rounding of time saved</h4>  <p>The time saved is presented as a number of years and months, fortnights or weeks, based on the repayment frequency selected. It assumes the potential partial last repayment when calculating the savings.</p>   <h4>Amount of interest saved</h4>  <p>This amount can only be approximated from the amount of time saved and based on the original loan details.</p>   <h3>Calculator disclaimer</h3> <p>The results from this calculator should be used as an indication only. Results do not represent either quotes or pre-qualifications for the product. Individual institutions apply different formulas. Information such as interest rates quoted and default figures used in the assumptions are subject to change.</p>"
+         },
+         "disclaimer":{
+            "showDisclaimer":true,
+            "content":"<h3>Calculator Disclaimer</h3> <p>The results from this calculator should be used as an indication only. Results do not represent either quotes or pre-qualifications for the product. Individual institutions apply different formulas. Information such as interest rates quoted and default figures used in the assumptions are subject to change.</p> <p> Calculator by <a href=\"http://www.widgetworks.com.au\" target=\"_blank\">Widget Works</a></p>"
+         },
+         "controls":{
+            "currency":"$",
+            "years":"Years",
+            "year":"Year",
+            "percentageSuffix":"% p.a.",
+            "repaymentFrequency":"Repayment Frequency",
+            "product":"Product",
+            "productGroup":"Product Group",
+            "repaymentType":"Repayment Type",
+            "interestRate":"Interest Rate",
+            "comparisonRate":"Comparison Rate",
+            "propertyValue":"Property Value",
+            "loanAmount":"Loan Amount",
+            "loanTerm":"Loan Term",
+            "optionsToSaveButton":"Options to Save",
+            "optionsToSave":"You can reduce your loan term and total interest payable",
+            "extraRepayment":"Extra Repayment Amount",
+            "offsetAmount":"Offset Account Amount",
+            "lumpSum":"Lump Sum Amount",
+            "lumpSumYear":"Lump Sum Year",
+            "initialFee":"Application fee",
+            "dischargeFee":"Discharge fee",
+            "regularFee":"Regular fee",
+            "regularFeeFrequency":"Regular fee frequency",
+            "loanTab":"My Loan Details",
+            "savingsTab":"Options to Save",
+            "print":"Print",
+            "information":"Information"
+         },
+         "results":{
+            "fixedRepayment":"Fixed Repayment",
+            "interestOnlyRepayment":"Interest only repayment",
+            "regularRepayment":"Regular Repayment",
+            "initialRepayment":"Initial Repayment",
+            "ongoingRepayment":"Ongoing Repayment",
+            "over":"over",
+            "totalInterestPayable":"Total Interest Payable",
+            "personalisedComparisonRate":"Personalised comparison rate",
+            "totalLoanAmount":"Total Loan Amount",
+            "loanDuration":"Loan Duration",
+            "outstanding":"Outstanding",
+            "principal":"Principal",
+            "interest":"Interest",
+            "loanTerm":"Loan Term",
+            "interestSaved":"Interest Saved",
+            "allSavingsDisabledMsg":"<p class=\"lead\">Product or repayment settings have limited the savings options available. An <strong>Interest only</strong> repayment type usually does not allow any extra repayments to be made.</p>",
+            "savingsIntroMsg":"<p class=\"lead\">Paying more than your minimum repayment will save interest in the long run. See how much you'll save with just $100 extra.</p>",
+            "timeSaved":"Time Saved",
+            "results":"Results",
+            "frequencyAt":"$0 at",
+            "interestSuffix":"$0 p.a.",
+            "tablePeriod":"Period",
+            "tablePrincipal":"Balance",
+            "tablePayment":"Payment",
+            "tableInterest":"Interest",
+            "tableBalance":"Total Outstanding",
+            "timePlurals":{
+               "year":{
+                  "1":"year",
+                  "other":"years"
+               },
+               "month":{
+                  "1":"month",
+                  "other":"months"
+               },
+               "fortnight":{
+                  "1":"fortnight",
+                  "other":"fortnights"
+               },
+               "week":{
+                  "1":"week",
+                  "other":"weeks"
+               }
+            }
+         },
+         "plurals":{
+            "term":{
+               "year":{
+                  "1":"$0 year",
+                  "other":"$0 years",
+                  "separator":", "
+               },
+               "month":{
+                  "1":"$0 month",
+                  "other":"$0 months"
+               }
+            }
+         },
+         "callToAction":{
+            "enabled":true,
+            "actions":[
+               {
+                  "text":"<h3>Want this calculator on your website?</h3> <p><a href=\"http://widgetworks.com.au/contact-us\" target=\"_blank\" class=\"btn btn-lg collector-trigger btn-success\">Contact us now for a quote</a></p>"
+               }
+            ]
+         },
+         "tooltips":[
+            {
+               "id":"nav-print",
+               "tooltip":"Print"
+            },
+            {
+               "id":"nav-assumptions",
+               "tooltip":"The Repayment Calculator calculates the type of repayment required, at the frequency requested, in respect of the loan parameters entered, namely amount, term and interest rate. The Product selected determines the default interest rate for standard variable products or the default interest rate and fixed period for fixed rate loans. In both scenarios, the customer can manually amend this interest rate. In the case of the fixed rate loans, the default interest rate of standard variable product will be used once the fixed period has completed. The Repayment Calculator also calculates the time saved to pay off the loan and the amount of interest saved based on a number of additional inputs from the customer. Included are, if repayments are increased by the entered amount of extra contribution per repayment period, if a single additional lump sum repayment is made, equal to the entered amount of additional lump sum repayment after the loan has been in force for the entered number of years, in addition to continuing the regular repayment and/or 100% of the offset account balance entered is used to reduce the outstanding loan balance per period when calculating interest. These calculations are done at the repayment frequency entered, in respect of the original loan parameters entered, namely amount, annual interest rate and term in years."
+            },
+            {
+               "id":"repayment-loanAmount",
+               "tooltip":"Please enter your loan amount here."
+            },
+            {
+               "id":"repayment-term",
+               "tooltip":"Please enter the number of years in which you plan to repay the loan."
+            },
+            {
+               "id":"repayment-interestRate",
+               "tooltip":"The interest rate will default to the product you selected. You can also change the rate up or down to understand the effect on your repayments and total interest payable."
+            },
+            {
+               "id":"repayment-extraRepayment",
+               "tooltip":"Please enter the extra amount you plan to make for every repayment (for fixed rate loans, this extra will commence once the fixed period has completed)"
+            },
+            {
+               "id":"repayment-offset",
+               "tooltip":"Enter the average account balance you'd have over a month. Interest is charged on the loan balance less the offset account balance.  For fixed rate loans, this only applies once the fixed period has completed."
+            },
+            {
+               "id":"repayment-lumpSum",
+               "tooltip":"Please enter the lump sum amount you plan to make against the loan."
+            },
+            {
+               "id":"repayment-lumpSumYear",
+               "tooltip":"Please enter the year you plan to make the lump sum payment."
+            },
+            {
+               "id":"result-house",
+               "tooltip":"Loan summary"
+            },
+            {
+               "id":"result-chart",
+               "tooltip":"Repayment chart"
+            },
+            {
+               "id":"result-table",
+               "tooltip":"Loan amortisation table"
+            },
+            {
+               "id":"result-products",
+               "tooltip":"Loan product features"
+            },
+            {
+               "id":"result-video",
+               "tooltip":"Video"
+            },
+            {
+               "id":"repayment-pcr",
+               "tooltip":"<div> Fees: <ul> <li>Establishment: <span>{{totalInitial | currency}}</span></li> <li>Discharge: <span>{{totalDischarge | currency}}</span></li> </ul> <ul> <li>Regular: <span>{{regular | currency}} per {{regularFrequencyLabel | lowercase}}</span></li> <li>Total regular fees: <span>{{totalRegular | currency}}</span></li> </ul> <ul> <li>Total fees: <span>{{totalFees | currency}}</span></li> </ul> </div>"
+            },
+            {
+               "id":"repayment-propertyValue",
+               "tooltip":"Please enter the value of the property you intend to mortgage."
+            },
+            {
+               "id":"repayment-repaymentType",
+               "tooltip":"<p><strong>Principle and Interest</strong> - amount borrowed and interest accrued are repaid together throughout the term of the loan.</p><p><strong>Interest only</strong> -  for a certain period of time, only interest accrued is payable on the loan.</p>"
+            }
+         ],
+         "chart":{
+            "xTitle":"Years",
+            "yTitle":"Amount Owing ($)"
+         }
+      },
+      "products":{
+         "productPanel":[
+            {
+               "id":"wiwoSV",
+               "title":"Your Standard Variable",
+               "leadSentence":"Use these panels to promote the key features of the product and make the calculator a sales tool.",
+               "featureList":[
+                  "100% offset account",
+                  "Make extra repayments or a lump sum",
+                  "See the savings in interest and time"
+               ],
+               "buttonTitle":"Find out more",
+               "buttonUrl":"http://widgetworks.com.au/contact-us/",
+               "buttonTarget":"_blank"
+            },
+            {
+               "id":"wiwoSVPremium",
+               "title":"Your Standard Variable - Premium",
+               "leadSentence":"Use these panels to promote the key features of the product and make the calculator a sales tool.",
+               "featureList":[
+                  "Apply online - send through the key details",
+                  "Find out more - link to the specific product page",
+                  "Click to call - package the calculator details to send to your CRM",
+                  "Pricing based on loan amount ranges"
+               ],
+               "buttonTitle":"Apply online",
+               "buttonUrl":"http://widgetworks.com.au/contact-us/",
+               "buttonTarget":"_blank"
+            },
+            {
+               "id":"wiwoFixed1Y",
+               "title":"WiWo Fixed - 1 Year",
+               "leadSentence":"The Widget Works Product DataStore allows a variety of product types to be setup through the Widget Manager.",
+               "featureList":[
+                  "Standard variable with different rates and fees",
+                  "Fixed products with different fixed periods",
+                  "Product rules for minimum and maximum loan amounts and terms"
+               ],
+               "buttonTitle":"Contact us",
+               "buttonUrl":"http://widgetworks.com.au/contact-us/",
+               "buttonTarget":"_blank"
+            },
+            {
+               "id":"wiwoFixed3Y",
+               "title":"WiWo Fixed - 3 Year",
+               "leadSentence":"The Widget Works Product DataStore allows a variety of product types to be setup through the Widget Manager.",
+               "featureList":[
+                  "Standard variable with different rates and fees",
+                  "Fixed products with different fixed periods",
+                  "Product rules for minimum and maximum loan amounts and terms"
+               ],
+               "buttonTitle":"Contact us",
+               "buttonUrl":"http://widgetworks.com.au/contact-us/",
+               "buttonTarget":"_blank"
+            },
+            {
+               "id":"wiwoFixed5Y",
+               "title":"WiWo Fixed - 5 Year",
+               "leadSentence":"The Widget Works Product DataStore allows a variety of product types to be setup through the Widget Manager.",
+               "featureList":[
+                  "Standard variable with different rates and fees",
+                  "Fixed products with different fixed periods",
+                  "Product rules for minimum and maximum loan amounts and terms"
+               ],
+               "buttonTitle":"Contact us",
+               "buttonUrl":"http://widgetworks.com.au/contact-us/",
+               "buttonTarget":"_blank"
+            },
+            {
+               "id":"wiwoHoneymoon2Y",
+               "title":"WiWo Honeymoon - 2 Years",
+               "leadSentence":"The Widget Works Product DataStore allows a variety of product types to be setup through the Widget Manager.",
+               "featureList":[
+                  "Standard variable rate with discount applied",
+                  "Standard variable with different rates and fees"
+               ],
+               "buttonTitle":"Contact us",
+               "buttonUrl":"http://widgetworks.com.au/contact-us/",
+               "buttonTarget":"_blank"
+            },
+            {
+               "id":"wiwoLvr",
+               "title":"Your Package - LVR and Loan Ranges",
+               "leadSentence":"You can set the default interest rate for the products based on both the LVR band and loan amount.",
+               "featureList":[
+                  "Complex pricing models - made easy for your customer",
+                  "Setup both LVR bands and loan amount ranges",
+                  "Easy updating of prices through the Widget Manager"
+               ],
+               "buttonTitle":"Contact us",
+               "buttonUrl":"http://widgetworks.com.au/contact-us/",
+               "buttonTarget":"_blank"
+            }
+         ],
+         "productGroups":[
+            {
+               "id":"variable",
+               "label":"Variable",
+               "groupedProducts":[
+                  "wiwoSV",
+                  "wiwoSVPremium",
+                  "wiwoSVPlus",
+                  "wiwoLvr"
+               ]
+            },
+            {
+               "id":"fixed",
+               "label":"Fixed",
+               "groupedProducts":[
+                  "wiwoFixed1Y",
+                  "wiwoFixed3Y",
+                  "wiwoFixed5Y"
+               ]
+            },
+            {
+               "id":"package",
+               "label":"Package",
+               "groupedProducts":[
+                  "wiwoHoneymoon2Y",
+                  "wiwoSVPackage"
+               ]
+            },
+            {
+               "id":"intro",
+               "label":"Intro",
+               "groupedProducts":[
+                  "wiwoHoneymoon2Y"
+               ]
+            },
+            {
+               "id":"all",
+               "label":"All",
+               "groupedProducts":[
+                  "wiwoSV",
+                  "wiwoSVPremium",
+                  "wiwoSVPlus",
+                  "wiwoLvr",
+                  "wiwoFixed1Y",
+                  "wiwoFixed3Y",
+                  "wiwoFixed5Y",
+                  "wiwoSVPackage",
+                  "wiwoHoneymoon2Y"
+               ]
+            }
+         ],
+         "productGroupsEnabled":false,
+         "hideProductGroups":false
+      },
+      "videoPanel":{
+         "defaults":{
+            "id":"defaults",
+            "videoEmbed":"<iframe src=\"//player.vimeo.com/video/10690854\" width=\"500\" height=\"400\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/10690854\">Barefoot Investor</a> from <a href=\"http://vimeo.com/barefootinvestor\">Scott Pape</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>",
+            "videoUrl":"//player.vimeo.com/video/10690854",
+            "width":500,
+            "height":400
+         },
+         "products":[
+            {
+               "id":"wiwoSV",
+               "videoEmbed":"<iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/9bZkp7q19f0?rel=0\" frameborder=\"0\" allowfullscreen></iframe>",
+               "videoUrl":"//www.youtube.com/embed/9bZkp7q19f0?rel=0",
+               "width":560,
+               "height":315
+            }
+         ]
+      },
+      "accessibility":{
+         "tabToTooltip":true
+      },
+      "view":{
+         "results":{
+            "defaultView":"house",
+            "resultOrder":[
+               "products",
+               "video",
+               "house",
+               "chart",
+               "table"
+            ],
+            "resultTypes":{
+               "house":{
+                  "id":"house",
+                  "icon":"icon-ww-house",
+                  "tooltip":"Loan Summary"
+               },
+               "animHouse":{
+                  "id":"animHouse",
+                  "icon":"icon-ww-house",
+                  "tooltip":"Loan summary"
+               },
+               "chart":{
+                  "id":"chart",
+                  "icon":"icon-ww-graph",
+                  "tooltip":"Repayment Chart"
+               },
+               "table":{
+                  "id":"table",
+                  "icon":"icon-ww-table",
+                  "tooltip":"Loan amortisation table"
+               },
+               "products":{
+                  "id":"products",
+                  "icon":"icon-ww-offer",
+                  "tooltip":"Loan product features"
+               },
+               "video":{
+                  "id":"video",
+                  "icon":"icon-ww-video",
+                  "tooltip":"Video"
+               }
+            }
+         }
+      },
+      "style":{
+         "primary":"1F497D",
+         "secondary":"1986C7",
+         "text":"666666"
+      },
+      "nav":{
+         "tabStyle":"tabs"
+      },
+      "admin":{
+         "diagnostics":{
+            "enabled":true,
+            "trace":true,
+            "segmentID":"aktoyrbjgu"
+         }
+      }
+   }
+}
