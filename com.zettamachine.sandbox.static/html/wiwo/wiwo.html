@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<!--script src="https://calcs.widgetworks.com.au/s/bimade/live.js"></script-->
+<script src="scripts/live.js"></script>
+<iframe id="wiwo-bimade" width="500" src="" frameborder="0" data-wiwo-init="false"></iframe>
+<script src="https://calcs.widgetworks.com.au/widget/widget-scout.min.js"></script>
+
+
+<script>
+var _wiwo = _wiwo || [];
+
+_wiwo.push(['getData', 'wiwo-bimade', function(e, result) {
+	  // 2. This callback function will be invoked when the Widget raises the `wiwo.dido.getDataResult` event:
+	  if (result.success){
+	    console.log('Received data from Widget ID=', e.frameId, ', data=', result.data);
+	  } else {
+	    console.warn('Unable to get data from Widget ID=', e.frameId, ', reason=', result.message);
+	  }
+
+	}]);
+
+</script>
+</body>
+</html>
