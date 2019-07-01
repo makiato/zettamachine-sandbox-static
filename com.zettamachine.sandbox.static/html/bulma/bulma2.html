@@ -6,20 +6,26 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab|Cabin+Sketch" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab|Alegreya+Sans+SC:900" rel="stylesheet">
     <script src="https://use.fontawesome.com/ee62852333.js"></script>
   </head>
 <body>
 <div class="landing">
 	<nav class="navbar is-transparent has-transparent-background" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
-			<div class="navbar-burger burger" data-target="navbar-zetta-burger">
+			<div class="">
+				<div class="is-block">
+					<span class="is-logo is-size-3 has-text-grey-lighter">zetta</span>
+					<span class="is-logo is-size-3 has-text-grey-lighter has-text-weight-bold">machine</span>
+				</div>
+			</div>
+			<div class="navbar-burger burger" data-target="zetta-burger">
 		      <span></span>
 		      <span></span>
 		      <span></span>
 	    	</div>
 		</div>
-	    <div id="navbar-zetta-burger" class="navbar-menu">
+	    <div id="zetta-burger" class="navbar-menu">
 		    <div class="navbar-end">
 		      	<a class="navbar-item">
 		            Blog
@@ -34,20 +40,23 @@
 	    </div>
 	</nav>	
 	<section class="section gap"></section>
-	<section class="section is-medium">
+	<section class="section">
 		<div class="container is-fluid">
-			<div class="columns">
-				<div class="column is-one-third is-offset-two-thirds is-hidden-mobile">
-					<span class="zetta">zetta</span>
-					<span class="machine">machine</span>
-				</div>
-			</div>
+			<!-- div class="columns">
+				<div class="column is-one-third is-offset-two-thirds is-hidden-mobile"-->
+					<div class="is-block is-hidden-mobile is-pulled-right">
+						Here's some cool text about some cool thing.
+					</div>
+				<!-- /div>
+			</div-->
 		</div>	
+	</section>
+	<section class="section is-medium">
 		<div class="container is-fluid">
 			<div  class="columns">
 				<div class="column is-one-quarter is-offset-one-quarter">
 					<div class="card">
-						<div class="card-image">
+						<div class="card-image is-front-image">
 							<figure class="image is-4by3">
 				          			<img src="superpowers.jpg" class="is-grayscale">
 				    		</figure>
@@ -60,7 +69,7 @@
 				</div>
 				<div class="column is-one-quarter">
 					<div class="card">
-						<div class="card-image">
+						<div class="card-image is-front-image">
 							<figure class="image is-4by3">
 				          			<img src="rome.jpg" class="is-grayscale">
 				    		</figure>
@@ -73,7 +82,7 @@
 				</div>
 				<div class="column is-one-quarter">
 					<div class="card">
-						<div class="card-image">
+						<div class="card-image is-front-image">
 							<figure class="image is-4by3">
 				          			<img src="good-idea.jpg" class="is-grayscale">
 				    		</figure>
@@ -91,21 +100,22 @@
 		<div class="container">
 			<div class="columns">
 				<div class="column is-half is-offset-half">
-					<form action="https://formspree.io/hello@zettamachine.com" method="POST">
+					<form id="zetta-contact">
 						<div class="field">
 			  				<label class="label">Name</label>
 			  				<div class="control">
-			   					<input class="input" type="name" placeholder="Name">
+			   					<input class="input" id="zetta-contact-name" type="name" placeholder="Name">
 			  				</div>
 						</div>
 						<div class="field">
 			  				<label class="label">Email</label>
 			  				<div class="control">
-			   					<input class="input" type="_replyto" placeholder="Email">
+			   					<input class="input" id="zetta-contact-replyto" type="_replyto" placeholder="Email">
 			  				</div>
 						</div>
+						<textarea class="textarea" id="zetta-contact-message" name="message" placeholder="e.g. Hello world"></textarea>
 						<div class="control is-gray">
-			    			<button class="button is-link">Submit</button>
+			    			<button class="button is-link has-background-dark">Submit</button>
 			  			</div>
 					</form>
 				</div>
@@ -135,8 +145,12 @@
 	</footer>
 </div>
 <style>
+body {
+	font-family: 'Roboto Slab';
+}
 .landing {
 	background-image: url('hugedavid.jpg'); 
+	background-position: center center;
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	height: auto; 
@@ -145,17 +159,22 @@
 .gap {
 	height: 30vh;
 }
-.zetta, .machine {
-	font: italic 3em 'PT Sans';
-	color: #ccc;
-}
-.machine {
-	font-size: 4em;
-	color: #ddd;
+.is-logo {
+	font-family: 'Alegreya Sans SC';
+	mix-blend-mode: screen;
+	color: red;
 }
 .is-grayscale {
   	-webkit-filter: grayscale(100%);
   	filter: grayscale(100%);
+}
+.is-front-image {
+	 position: relative;
+}
+.is-front-image:after {
+	position: absolute; content: ''; display: block; top: 0; left: 0; height: 100%; width: 100%;
+    background: rgba(3, 44, 53, 0.4);
+    mix-blend-mode: multiply
 }
 .has-transparent-background {
 	background: none;
