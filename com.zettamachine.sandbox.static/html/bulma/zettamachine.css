@@ -1,0 +1,52 @@
+html {
+			background-color: transparent;
+		}
+		body {
+			font-family: 'Roboto Slab';
+			background: rgba(3, 44, 53, 0.7);
+		}
+ 		.blog-landing {
+ 			background-color: transparent;
+ 		}
+ 		.has-background-david {
+			background-image: url('hugedavid.jpg'); 
+			background-position: center left;
+			background-repeat: no-repeat;
+			background-size: auto 100%; 
+			background-attachment: fixed;
+ 		}
+.landing {
+	background-image: url('hugedavid.jpg'); 
+	background-position: center center;
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	height: auto; 
+	max-height: 100vh;
+}
+.gap {
+	height: 37vh;
+}
+.is-grayscale {
+  	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+}
+.is-front-image {
+	 position: relative;
+}
+.is-front-image:after {
+	position: absolute; content: ''; display: block; top: 0; left: 0; height: 100%; width: 100%;
+    background: rgba(3, 44, 53, 0.4);
+    mix-blend-mode: multiply
+}
+.has-transparent-background {
+	background: transparent;
+}
+.has-small-padding {
+	padding: 0.75rem;
+}
+.navber-menu {
+	background: rgba(3, 44, 53, 0.7);
+}
+.navbar-menu a, .title {
+	font-family: 'Raleway';
+}
