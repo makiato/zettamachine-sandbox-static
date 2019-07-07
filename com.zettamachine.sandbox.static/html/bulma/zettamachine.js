@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
         var target = $el.dataset.target;
         var $target = document.getElementById(target);
         $el.classList.toggle('is-active');
+        $el.classList.toggle('has-dark-background');
         $target.classList.toggle('is-active');
+        $target.classList.toggle('has-dark-background');
       });
     });
   }
