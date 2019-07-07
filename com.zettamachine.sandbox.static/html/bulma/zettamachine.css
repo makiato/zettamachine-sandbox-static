@@ -9,18 +9,18 @@ html {
  			background-color: transparent;
  		}
  		.has-background-david {
-			background-image: url('hugedavid.jpg'); 
+			background-image: url('hugedavid.jpg');
 			background-position: center left;
 			background-repeat: no-repeat;
-			background-size: auto 100%; 
+			background-size: auto 100%;
 			background-attachment: fixed;
  		}
 .landing {
-	background-image: url('hugedavid.jpg'); 
+	background-image: url('hugedavid.jpg');
 	background-position: center center;
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	height: auto; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
 	max-height: 100vh;
 }
 .gap {
@@ -44,9 +44,12 @@ html {
 .has-small-padding {
 	padding: 0.75rem;
 }
-.navber-menu {
+.navbar-menu {
 	background: rgba(3, 44, 53, 0.7);
 }
 .navbar-menu a, .title {
 	font-family: 'Raleway';
+}
+.has-dark-background {
+    background: rgba(3, 44, 53, 0.7);
 }
