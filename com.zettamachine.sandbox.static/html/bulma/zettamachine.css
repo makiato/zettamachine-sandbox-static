@@ -44,9 +44,6 @@ html {
 .has-small-padding {
 	padding: 0.75rem;
 }
-.navbar-menu {
-	background: rgba(3, 44, 53, 0.7);
-}
 .navbar-menu a, .title {
 	font-family: 'Raleway';
 }
