@@ -50,3 +50,9 @@ html {
 .has-dark-background {
     background: rgba(3, 44, 53, 0.7);
 }
+.navbar-end {
+	align-items: flex-start;
+}
+.is-fixed {
+	position: fixed;
+}

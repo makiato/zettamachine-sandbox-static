@@ -17,6 +17,23 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+  
+  var $logo = document.getElementById('logo');
+  var $navbar = getAll('.navbar');
+  
+  window.onscroll = function() {
+	  if($logo) {
+		  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+			  $logo.width = '90';
+			  $navbar[0].classList.add('has-dark-background');
+		  } else {
+			  $logo.width = '180';
+			  $navbar[0].classList.remove('has-dark-background');
+		  }
+	  } else {
+		  console.log('there is no logo');
+	  }
+  }
 
   // Functions
 
