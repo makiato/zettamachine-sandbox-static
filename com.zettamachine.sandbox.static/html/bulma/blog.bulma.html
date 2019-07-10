@@ -12,21 +12,32 @@
   	<div class="columns">
   		<div class="column is-one-third has-background-david">
   			<div class="container">
-	  			<aside class="menu is-fixed">
-	  				<figure>
-	  					<a href="bulma.html">
-	  						<img src="zettamachine.png" alt="zettamachine" title="zettamachine" />
-	  					</a>	
-	  				</figure>
-	  				<p class="menu-label">
-	  					Latest articles
-	  				</p>
-	  				<ul class="menu-list">
-	  					<li><a>6 superpowers of a technology architect</a></li>
-	  					<li><a>As if it actually matters</a></li>
-	  				</ul>
-	  			</aside>
+  			<nav class="navbar is-transparent has-transparent-background is-fixed-top" role="navigation" aria-label="main navigation" style="width: 30%;">
+  				<div class="navbar-brand">
+  					<a href="bulma.html">
+	  					<img src="zettamachine.png" alt="zettamachine" title="zettamachine" />
+	  				</a>
+  				</div>
+  				<div class="navbar-menu">
+  					<div class="navbar-start">
+  						<a class="navbar-item">6 superpowers of a technology architect</a>
+		  				<a class="navbar-item">As if it actually matters</a>
+		  				<a class="navbar-item">Yeah, that is true</a>
+  					</div>
+  					<div class="navbar-end">
+  						<div class="navbar-item has-dropdown is-hoverable">
+  							<a class="navbar-link">Latest Articles</a>
+  							<div class="navbar-dropdown">
+	  							<a class="navbar-item">6 superpowers of a technology architect</a>
+		  						<a class="navbar-item">As if it actually matters</a>
+		  						<a class="navbar-item">Yeah, that is true</a>
+	  						</div>
+  						</div>
+  					</div>
+  				</div>
+  			</nav>
   			</div>
+
   		</div>
   		<div class="column is-two-third has-background-light">
   			<section class="section">
@@ -53,7 +64,7 @@
   	</div>
   </div>
  	<style>
- 		
+ 		.navbar, .narbar-brand, .navbar-start, .navbar-end, .navbar-menu {flex-direction: column;}
  	</style> 
   </body>
 </html>

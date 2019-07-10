@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   window.onscroll = function() {
 	  if($logo) {
 		  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-			  $logo.width = '90';
+			  $logo.width = '0';
 			  $navbar[0].classList.add('has-dark-background');
 		  } else {
 			  $logo.width = '180';
