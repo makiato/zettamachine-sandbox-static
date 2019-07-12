@@ -10,34 +10,28 @@
   <body>
   <div class="blog-landing">
   	<div class="columns">
-  		<div class="column is-one-third has-background-david">
-  			<div class="container">
+  		<div class="column is-one-third has-background-david is-mobile-nav">
   			<nav class="navbar is-transparent has-transparent-background is-fixed-top" role="navigation" aria-label="main navigation" style="width: 30%;">
   				<div class="navbar-brand">
   					<a href="bulma.html">
-	  					<img src="zettamachine.png" alt="zettamachine" title="zettamachine" />
+	  					<img src="zettamachine.png" alt="zettamachine" title="zettamachine"/>
 	  				</a>
+	  				<div class="navbar-burger burger" data-target="zetta-burger">
+			      		<span></span>
+			      		<span></span>
+			      		<span></span>
+		    		</div>
   				</div>
-  				<div class="navbar-menu">
+  				<div class="navbar-menu"  id="zetta-burger">
   					<div class="navbar-start">
   						<a class="navbar-item">6 superpowers of a technology architect</a>
 		  				<a class="navbar-item">As if it actually matters</a>
 		  				<a class="navbar-item">Yeah, that is true</a>
   					</div>
   					<div class="navbar-end">
-  						<div class="navbar-item has-dropdown is-hoverable">
-  							<a class="navbar-link">Latest Articles</a>
-  							<div class="navbar-dropdown">
-	  							<a class="navbar-item">6 superpowers of a technology architect</a>
-		  						<a class="navbar-item">As if it actually matters</a>
-		  						<a class="navbar-item">Yeah, that is true</a>
-	  						</div>
-  						</div>
   					</div>
   				</div>
   			</nav>
-  			</div>
-
   		</div>
   		<div class="column is-two-third has-background-light">
   			<section class="section">
@@ -64,7 +58,17 @@
   	</div>
   </div>
  	<style>
+ 		
+		@media only screen and (max-width: 768px) {
+  			.navbar, .narbar-brand, .navbar-start, .navbar-end, .navbar-menu {flex-direction: row;}
+  			.navbar {width: 100;}
+		}
  		.navbar, .narbar-brand, .navbar-start, .navbar-end, .navbar-menu {flex-direction: column;}
+ 		.is-mobile-nav {
+ 			min-height: 200px;
+ 		}
  	</style> 
+ 	<script src="zettamachine.js"></script>
+	<script src="https://use.fontawesome.com/ee62852333.js"></script>
   </body>
 </html>
