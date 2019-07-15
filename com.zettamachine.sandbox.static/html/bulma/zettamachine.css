@@ -24,7 +24,7 @@ html {
 	max-height: 100vh;
 }
 .gap {
-	height: 50vh;
+	height: 65vh;
 }
 .is-grayscale {
   	-webkit-filter: grayscale(100%);
