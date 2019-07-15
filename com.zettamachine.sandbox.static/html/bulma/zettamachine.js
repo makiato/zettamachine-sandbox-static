@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var $target = document.getElementById(target);
         $el.classList.toggle('is-active');
         $target.classList.toggle('is-active');
-        $target.classList.toggle('has-dark-background');
+        $target.classList.toggle('has-background-light	');
       });
     });
   }
@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	  if($logo) {
 		  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
 			  $logo.width = '0';
-			  $navbar[0].classList.add('has-dark-background');
+			  $navbar[0].classList.add('has-background-light');
 		  } else {
 			  $logo.width = '180';
-			  $navbar[0].classList.remove('has-dark-background');
+			  $navbar[0].classList.remove('has-background-light');
 		  }
 	  } else {
 		  console.log('there is no logo');
