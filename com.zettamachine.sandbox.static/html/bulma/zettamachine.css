@@ -1,20 +1,21 @@
 html {
-			background-color: transparent;
-		}
-		body {
-			font-family: 'Roboto Slab';
-			background: rgba(3, 44, 53, 0.8);
-		}
- 		.blog-landing {
- 			background-color: transparent;
- 		}
- 		.has-background-david {
-			background-image: url('hugedavid.jpg');
-			background-position: center left;
-			background-repeat: no-repeat;
-			background-size: auto 100%;
-			background-attachment: fixed;
- 		}
+	background-color: transparent;
+}
+body {
+	font-family: 'Roboto Slab';
+	background: rgba(3, 44, 53, 0.8);
+	background: #666;
+}
+.blog-landing {
+ 	background-color: transparent;
+ }
+ .has-background-david {
+	background-image: url('hugedavid.jpg');
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-attachment: fixed;
+ }
 .landing {
 	background-image: url('hugedavid.jpg');
 	background-position: center center;
