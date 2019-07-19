@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>
+		Zetta logo
+	</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+<div id="container"></div> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"> </script> 
+<script> 
+var r = 8;
+var paper = Raphael("container", 30*r, 30*r); 
+var dot = paper.circle(15*r, 15*r, 10*r).attr({ 
+	stroke: "#000", 
+	"stroke-width": 2 
+});
+var c = paper.rect(6*r, 7*r, 18*r, 18*r).attr({ 
+	stroke: "#000", 
+	"stroke-width": 2 
+});;
+</script> 
+<div style="font: 3rem Raleway;">
+	zetta<br/>
+	<b>machine</b>
+</div>
+</body>
+</html>
