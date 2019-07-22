@@ -1,0 +1,32 @@
+bsil APIs ["API"] are RESTful. APIs are exposed on a base URL. Actual API endpoint consists of the base URL, API version and the resource URI.
+
+API represent data as resources. A resource is a data object which refers to a concept API consumers are interested in. APIs usually expose resources as collections. Such resources can also be identified as collection resources. A collection resource named transactions represents a collection of transaction objects. Individual resources are accessed through collections and by specifying a resource identifier. E.g. below resource path points to a particular transaction object with the ID DD12345.
+
+../transactions/DD12345
+
+RESTful APIs use standard HTTP protocol to access and standard HTTP request methods to interact with resources. In the end, these interactions correspond to a business capability. For example in order to create a new transaction object we would send a HTTP POST request to transactions collection resource.
+
+HTTP POST ../transactions
+
+{...}
+
+In some cases it may not make sense to expose resources through collections. This usually happens when API exposes a function object, instead of a data object. Such resources are singleton resources as they only point to a single instance of an object. E.g. below resource path URI points to a search function object over the customers collection.
+
+../customers/search
+
+There are also cases where a resource would live under another resource. These resources are accessed through the parent resource, and are called sub-resources. As an example, a collection of transactions related to a particular account would be a sub-resource.
+
+../accounts/{account-id}/transactions
+
+bsil APIs expose information and functions under three conceptual layers; capability APIs, process APIs and experience APIs. These are examined in detail in bsil API Platform Blueprint; but here is a quick definition:
+
+Capability APIs implement finer grained business capabilities described in AMP Bank's Business Capabilities Model.
+
+Process APIs orchestrate Capability APIs to enable business processes.
+
+Experience APIs are consumer specific APIs to support consumers' specific interaction, data structure and use case needs.
+
+One important thing to note is the business capabilities implemented and the common data terminology used by core APIs are based on AMP Bank's enterprise architecture artefacts, namely:
+
+Business Capabilities Model
+AMP Bank Logical Data Model
