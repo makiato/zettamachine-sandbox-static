@@ -6,23 +6,27 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-<div id="container"></div> 
+<div id="container-logo">
+	<div id="draw-logo-1"></div>
+	<div id="text-zetta">zetta</div>
+	<div id="text-machine">machine</div>
+</div> 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"> </script> 
 <script> 
-var r = 8;
-var paper = Raphael("container", 30*r, 30*r); 
-var dot = paper.circle(15*r, 15*r, 10*r).attr({ 
-	stroke: "#000", 
-	"stroke-width": 2 
-});
-var c = paper.rect(6*r, 7*r, 18*r, 18*r).attr({ 
-	stroke: "#000", 
-	"stroke-width": 2 
-});;
+function drawLogo(index, size, color, weight) {
+	var rem = 16;
+	var paper = Raphael("draw-logo-" + index, rem*size + 2*weight, rem*size + 2*weight); 
+	paper.circle((rem/2)*size + weight, (rem/2)*size + weight, (rem/2)*size).attr({'stroke':color,'stroke-width':weight});
+	paper.rect(0.075*rem*size + weight, 0.15*rem*size + weight, 0.85*rem*size, 0.85*rem*size).attr({'stroke':color,'stroke-width':weight});
+}
+
+drawLogo(1, 6,"#000",1);
 </script> 
-<div style="font: 3rem Raleway;">
-	zetta<br/>
-	<b>machine</b>
-</div>
+<style>
+#container-logo {display: flex; flex-direction: column; align-items: flex-start;align-content: flex-start;}
+#draw-logo-1 {display: inline;}
+#text-zetta {display: inline; font: 2rem Raleway; margin-right: 0.1rem;}
+#text-machine {display: inline; font: bold 2rem Raleway;}
+</style>
 </body>
 </html>
