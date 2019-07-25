@@ -6,14 +6,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-<!--div id="container-logo">
-	<div id="draw-logo-1"></div>
-	<div id="text-zetta">zetta</div>
-	<div id="text-machine">machine</div>
-</div--> 
+<div class="logo" direction="column" size="4" colour="#000" weight="10"></div>
 <div class="logo" direction="row" size="2" colour="#000" weight="1"></div>
-<div class="logo" direction="row" size="2" colour="#000" weight="1"></div>
-<div class="logo" direction="column" size="2" colour="#000" weight="1"></div>
+<div class="logo" direction="column" size="6" colour="#000" weight="4"></div>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"> </script> 
 <script> 
 
@@ -30,15 +25,28 @@ document.addEventListener('DOMContentLoaded', function () {
 			function($logo) {
 				var $rem = 16;
 				var $direction = $logo.getAttribute('direction');
+				if($direction == 'column') {
+					$logo.classList.add('logo-column');
+				} else {
+					$logo.classList.add('logo-row');
+				}
 				var $size = $logo.getAttribute('size');
 				var $colour = $logo.getAttribute('colour');
 				var $weight = $logo.getAttribute('weight');
 				var $logoImage = document.createElement('div');
 				var paper = Raphael($logoImage, $rem * $size + 2 * $weight, $rem * $size + 2 * $weight); 
-				paper.circle(($rem / 2) * $size + $weight, ($rem / 2) * $size + $weight, ($rem / 2) * $size).attr({'stroke': $colour,'stroke-width': $weight});
 				paper.rect(0.075 * $rem * $size + $weight, 0.15 * $rem * $size + $weight, 0.85 * $rem * $size, 0.85 * $rem * $size).attr({'stroke': $colour,'stroke-width': $weight});
+				paper.circle(($rem/2) * $size + $weight, ($rem/2) * $size + $weight, ($rem/2) * $size).attr({'stroke': $colour,'stroke-width': $weight});
 				$logoImage.classList.add('logo-image');
-				$logo.appendChild($logo-image);
+				$logo.appendChild($logoImage);
+				var $logoZetta = document.createElement('div');
+				$logoZetta.classList.add('logo-zetta');
+				$logoZetta.style.fontSize = $size / 1.6 + 'rem';
+				$logo.appendChild($logoZetta);
+				var $logoMachine = document.createElement('div');
+				$logoMachine.classList.add('logo-machine');
+				$logoMachine.style.fontSize = $size / 1.6 + 'rem';
+				$logo.appendChild($logoMachine);
 			}
 		);
 	}
@@ -65,8 +73,10 @@ drawLogo(1, 2,"#000",1);
 .logo-row {display: flex; flex-direction: row; align-items: center; align-content: flex-start;}
 .logo-column {display: flex; flex-direction: column; align-items: felx-start; align-content: flex-start;}
 .logo-image {}
-.logo-zetta {font-family: Raleway;}
-.logo-machine {font-family: Raleway;}
+.logo-zetta {font-family: Raleway; margin: 0;}
+.logo-zetta:after {content: 'zetta';}
+.logo-machine {font-family: Raleway; font-weight: bold; margin: 0;}
+.logo-machine:after {content: 'machine';}
 </style>
 </body>
 </html>
