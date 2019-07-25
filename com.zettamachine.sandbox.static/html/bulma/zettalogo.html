@@ -30,13 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
 				} else {
 					$logo.classList.add('logo-row');
 				}
-				var $size = $logo.getAttribute('size');
+				var $size = parseInt($logo.getAttribute('size'),10);
 				var $colour = $logo.getAttribute('colour');
-				var $weight = $logo.getAttribute('weight');
+				var $weight = parseInt($logo.getAttribute('weight'),10);
 				var $logoImage = document.createElement('div');
 				var paper = Raphael($logoImage, $rem * $size + 2 * $weight, $rem * $size + 2 * $weight); 
 				paper.rect(0.075 * $rem * $size + $weight, 0.15 * $rem * $size + $weight, 0.85 * $rem * $size, 0.85 * $rem * $size).attr({'stroke': $colour,'stroke-width': $weight});
+				console.log(($rem/2) * $size + $weight);
+				console.log(($rem/2) * $size + $weight);
 				paper.circle(($rem/2) * $size + $weight, ($rem/2) * $size + $weight, ($rem/2) * $size).attr({'stroke': $colour,'stroke-width': $weight});
+				
 				$logoImage.classList.add('logo-image');
 				$logo.appendChild($logoImage);
 				var $logoZetta = document.createElement('div');
