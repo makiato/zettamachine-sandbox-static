@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Toggles
+  // Burger toggles
 
   var $burgers = getAll('.burger');
 
@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-  
-  var $logo = document.getElementById('logo');
+
+  // Navbar scroll transition
   var $navbar = getAll('.navbar');
   
   window.onscroll = function() {
@@ -34,6 +34,43 @@ document.addEventListener('DOMContentLoaded', function () {
 		  console.log('there is no logo');
 	  }
   }
+  
+  // Raphael logo
+  var $arrayLogo = getAll(".logo");
+	
+	if($arrayLogo.length > 0) {
+		$arrayLogo.forEach(
+			function($logo) {
+				var $rem = 16;
+				var $direction = $logo.getAttribute('direction');
+				if($direction == 'column') {
+					$logo.classList.add('logo-column');
+				} else {
+					$logo.classList.add('logo-row');
+				}
+				var $size = parseInt($logo.getAttribute('size'),10);
+				var $colour = $logo.getAttribute('colour');
+				var $weight = parseInt($logo.getAttribute('weight'),10);
+				var $logoImage = document.createElement('div');
+				var paper = Raphael($logoImage, $rem * $size + 2 * $weight, $rem * $size + 2 * $weight); 
+				paper.rect(0.075 * $rem * $size + $weight, 0.15 * $rem * $size + $weight, 0.85 * $rem * $size, 0.85 * $rem * $size).attr({'stroke': $colour,'stroke-width': $weight});
+				paper.circle(($rem/2) * $size + $weight, ($rem/2) * $size + $weight, ($rem/2) * $size).attr({'stroke': $colour,'stroke-width': $weight});
+				
+				$logoImage.classList.add('logo-image');
+				$logo.appendChild($logoImage);
+				var $logoZetta = document.createElement('div');
+				$logoZetta.classList.add('logo-zetta');
+				$logoZetta.style.fontSize = $size / 1.6 + 'rem';
+				$logoZetta.style.color = $colour;
+				$logo.appendChild($logoZetta);
+				var $logoMachine = document.createElement('div');
+				$logoMachine.classList.add('logo-machine');
+				$logoMachine.style.fontSize = $size / 1.6 + 'rem';
+				$logoMachine.style.color = $colour;
+				$logo.appendChild($logoMachine);
+			}
+		);
+	}
 
   // Functions
 

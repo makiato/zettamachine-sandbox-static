@@ -6,10 +6,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-<div class="logo" direction="column" size="4" colour="#000" weight="10"></div>
-<div class="logo" direction="row" size="2" colour="#000" weight="1"></div>
-<div class="logo" direction="column" size="6" colour="#000" weight="4"></div>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"> </script> 
+<div class="logo" direction="column" size="4" colour="#000" weight="6"></div>
+<div class="logo" direction="row" size="2" colour="#ff9900" weight="1"></div>
+<div class="logo" direction="column" size="6" colour="#303" weight="4"></div>
+<div class="logo" direction="row" size="3" colour="#666" weight="4"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.8/raphael.min.js" integrity="sha256-BgmwZ6j044t3GCQhmJtpiHkUGVYzjapcGWjBH4dVnes=" crossorigin="anonymous"></script>
 <script> 
 
 
@@ -36,8 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				var $logoImage = document.createElement('div');
 				var paper = Raphael($logoImage, $rem * $size + 2 * $weight, $rem * $size + 2 * $weight); 
 				paper.rect(0.075 * $rem * $size + $weight, 0.15 * $rem * $size + $weight, 0.85 * $rem * $size, 0.85 * $rem * $size).attr({'stroke': $colour,'stroke-width': $weight});
-				console.log(($rem/2) * $size + $weight);
-				console.log(($rem/2) * $size + $weight);
 				paper.circle(($rem/2) * $size + $weight, ($rem/2) * $size + $weight, ($rem/2) * $size).attr({'stroke': $colour,'stroke-width': $weight});
 				
 				$logoImage.classList.add('logo-image');
@@ -45,15 +44,16 @@ document.addEventListener('DOMContentLoaded', function () {
 				var $logoZetta = document.createElement('div');
 				$logoZetta.classList.add('logo-zetta');
 				$logoZetta.style.fontSize = $size / 1.6 + 'rem';
+				$logoZetta.style.color = $colour;
 				$logo.appendChild($logoZetta);
 				var $logoMachine = document.createElement('div');
 				$logoMachine.classList.add('logo-machine');
 				$logoMachine.style.fontSize = $size / 1.6 + 'rem';
+				$logoMachine.style.color = $colour;
 				$logo.appendChild($logoMachine);
 			}
 		);
 	}
-	console.log('finished');
 	
 	function getAll(selector) {
 	   return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
