@@ -6,13 +6,51 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-<div id="container-logo">
+<!--div id="container-logo">
 	<div id="draw-logo-1"></div>
 	<div id="text-zetta">zetta</div>
 	<div id="text-machine">machine</div>
-</div> 
+</div--> 
+<div class="logo" direction="row" size="2" colour="#000" weight="1"></div>
+<div class="logo" direction="row" size="2" colour="#000" weight="1"></div>
+<div class="logo" direction="column" size="2" colour="#000" weight="1"></div>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"> </script> 
 <script> 
+
+
+'use strict';
+
+document.addEventListener('DOMContentLoaded', function () {
+	
+	console.log('loaded');
+	var $arrayLogo = getAll(".logo");
+	
+	if($arrayLogo.length > 0) {
+		$arrayLogo.forEach(
+			function($logo) {
+				var $rem = 16;
+				var $direction = $logo.getAttribute('direction');
+				var $size = $logo.getAttribute('size');
+				var $colour = $logo.getAttribute('colour');
+				var $weight = $logo.getAttribute('weight');
+				var $logo-image = document.createElement('div');
+				var paper = Raphael($logo-image, $rem * $size + 2 * $weight, $rem * $size + 2 * $weight); 
+				paper.circle(($rem / 2) * $size + $weight, ($rem / 2) * $size + $weight, ($rem / 2) * $size).attr({'stroke': $colour,'stroke-width': $weight});
+				paper.rect(0.075 * $rem * $size + $weight, 0.15 * $rem * $size + $weight, 0.85 * $rem * $size, 0.85 * $rem * $size).attr({'stroke': $colour,'stroke-width': $weight});
+				$logo-image.classList.add('logo-image');
+				$logo.appendChild($logo-image);
+			}
+		);
+	}
+	console.log('finished');
+	
+	function getAll(selector) {
+	   return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+	}
+	
+});
+
+/*
 function drawLogo(index, size, color, weight) {
 	var rem = 16;
 	var paper = Raphael("draw-logo-" + index, rem*size + 2*weight, rem*size + 2*weight); 
@@ -20,13 +58,15 @@ function drawLogo(index, size, color, weight) {
 	paper.rect(0.075*rem*size + weight, 0.15*rem*size + weight, 0.85*rem*size, 0.85*rem*size).attr({'stroke':color,'stroke-width':weight});
 }
 
-drawLogo(1, 6,"#000",1);
+drawLogo(1, 2,"#000",1);
+*/
 </script> 
 <style>
-#container-logo {display: flex; flex-direction: column; align-items: flex-start;align-content: flex-start;}
-#draw-logo-1 {display: inline;}
-#text-zetta {display: inline; font: 2rem Raleway; margin-right: 0.1rem;}
-#text-machine {display: inline; font: bold 2rem Raleway;}
+.logo-row {display: flex; flex-direction: row; align-items: center; align-content: flex-start;}
+.logo-column {display: flex; flex-direction: column; align-items: felx-start; align-content: flex-start;}
+.logo-image {}
+.logo-zetta {font-family: Raleway;}
+.logo-machine {font-family: Raleway;}
 </style>
 </body>
 </html>
