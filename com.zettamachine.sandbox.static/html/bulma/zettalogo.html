@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
 				var $size = $logo.getAttribute('size');
 				var $colour = $logo.getAttribute('colour');
 				var $weight = $logo.getAttribute('weight');
-				var $logo-image = document.createElement('div');
-				var paper = Raphael($logo-image, $rem * $size + 2 * $weight, $rem * $size + 2 * $weight); 
+				var $logoImage = document.createElement('div');
+				var paper = Raphael($logoImage, $rem * $size + 2 * $weight, $rem * $size + 2 * $weight); 
 				paper.circle(($rem / 2) * $size + $weight, ($rem / 2) * $size + $weight, ($rem / 2) * $size).attr({'stroke': $colour,'stroke-width': $weight});
 				paper.rect(0.075 * $rem * $size + $weight, 0.15 * $rem * $size + $weight, 0.85 * $rem * $size, 0.85 * $rem * $size).attr({'stroke': $colour,'stroke-width': $weight});
-				$logo-image.classList.add('logo-image');
+				$logoImage.classList.add('logo-image');
 				$logo.appendChild($logo-image);
 			}
 		);
