@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Navbar scroll transition
   
   var $navbars = getAll('.navbar');
-  var $navbarItems = getAll('.navbar-item');
+  var $logos = getAll('.logo');
   window.onscroll = function() {
 	  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
 		  console.log('dataset: ' + $logos[0].dataset.direction);
