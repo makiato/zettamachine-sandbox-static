@@ -3,10 +3,10 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 	// Raphael logo
-	  var $arrayLogo = getAll(".logo");
+	  var $logos = getAll(".logo");
 		
-		if($arrayLogo.length > 0) {
-			$arrayLogo.forEach(
+		if($logos.length > 0) {
+			$logos.forEach(
 				function($logo) {
 					var $rem = 16;
 					var $direction = $logo.getAttribute('direction');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var $navbarItems = getAll('.navbar-item');
   window.onscroll = function() {
 	  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-		  $navbarItems[0].classList.add('has-text-dark');
+		  $logos[0].classList.add('has-text-dark');
 		  $navbars[0].classList.add('has-background-light');
 	  } else {
 		  $navbars[0].classList.remove('has-background-light');
