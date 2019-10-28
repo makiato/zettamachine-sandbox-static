@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Navbar scroll transition
   
   var $navbars = getAll('.navbar');
-  //var $navbarItems = getAll('.navbar-item');
+  var $navbarItems = getAll('.navbar-item');
   window.onscroll = function() {
       console.log('this is the scroll function');
 	  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
