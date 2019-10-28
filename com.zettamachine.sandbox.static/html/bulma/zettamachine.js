@@ -59,13 +59,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Navbar scroll transition
   
-  var $navbar = getAll('.navbar');
+  var $navbars = getAll('.navbar');
+  var $navbarItems = getAll('.navbar-item');
   window.onscroll = function() {
 	  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-		  
-		  $navbar[0].classList.add('has-background-light');
+		  $navbarItems[0].classList.add('has-text-dark');
+		  $navbars[0].classList.add('has-background-light');
 	  } else {
-		  $navbar[0].classList.remove('has-background-light');
+		  $navbars[0].classList.remove('has-background-light');
 	 }
   }
 
