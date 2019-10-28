@@ -60,12 +60,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Navbar scroll transition
   
   var $navbars = getAll('.navbar');
-  var $navbarItems = getAll('.navbar-item');
+  //var $navbarItems = getAll('.navbar-item');
   window.onscroll = function() {
 	  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-		  $logos[0].classList.add('has-text-dark');
+		  $logos[0].classList.add('has-text-black');
 		  $navbars[0].classList.add('has-background-light');
 	  } else {
+	      $logos[0].classList.add('has-text-black');
 		  $navbars[0].classList.remove('has-background-light');
 	 }
   }
