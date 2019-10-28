@@ -63,10 +63,10 @@ document.addEventListener('DOMContentLoaded', function () {
   //var $navbarItems = getAll('.navbar-item');
   window.onscroll = function() {
 	  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-		  $logos[0].classList.add('has-text-black');
+		  console.log($logos[0].direction);
 		  $navbars[0].classList.add('has-background-light');
 	  } else {
-	      $logos[0].classList.add('has-text-black');
+		  console.log($logos[0].colour);
 		  $navbars[0].classList.remove('has-background-light');
 	 }
   }
