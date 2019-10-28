@@ -60,13 +60,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Navbar scroll transition
   
   var $navbars = getAll('.navbar');
-  var $l = getAll('body > div > nav > div > div.navbar-brand > div.logo.logo-column')[0];
+  var $l = document.querySelectorAll('body > div > nav > div > div.navbar-brand > div.logo.logo-column');
   window.onscroll = function() {
 	  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-		  console.log('dataset: ' + $l.dataset.direction);
+		  console.log('dataset: ' + $l.attributes.direction);
 		  $navbars[0].classList.add('has-background-light');
 	  } else {
-		  console.log('dataset: ' + $l.dataset.colour);
+		  console.log('dataset: ' + $l.attributes.colour);
 		  $navbars[0].classList.remove('has-background-light');
 	 }
   }
