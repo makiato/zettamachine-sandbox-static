@@ -62,10 +62,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var $navbars = getAll('.navbar');
   //var $navbarItems = getAll('.navbar-item');
   window.onscroll = function() {
+      console.log('this is the scroll function');
 	  if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+		  console.log('scroll top over 5');
 		  console.log($logos[0].direction);
 		  $navbars[0].classList.add('has-background-light');
 	  } else {
+	      console.log('scroll top less than 5');
 		  console.log($logos[0].colour);
 		  $navbars[0].classList.remove('has-background-light');
 	 }
